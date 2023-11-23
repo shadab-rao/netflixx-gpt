@@ -63,17 +63,17 @@ const Header = () => {
   const showGptSearch = useSelector((store) => store.gpt.showGptSearch);
 
   return (
-    <div className=" z-10 absolute px-2  md:px-8 flex  justify-between py-2 bg-gradient-to-b from-black w-[100%] ">
+    <div className=" z-10  absolute px-2  md:px-8 flex  justify-between py-2 bg-gradient-to-b from-black w-[100%] ">
       <img className="w-28 md:w-48 mx-0 cursor-pointer" alt="logo" src="./images/Netflix_Logo_PMS.png" onClick={handleGptSearchClick}/>
       {user && (
         <div className="flex p-4 relative">
           {showGptSearch && (
             <select
-              className="p-1 mb-2  md:p-2  m-2 bg-gray-900 opacity-75 border-none text-white rounded-md"
+              className="p-1 mb-2 cursor-pointer  md:p-2  m-2 bg-gray-900 opacity-75 border-none text-white rounded-md"
               onChange={handleLanguageChnage}
             >
               {SUPPORTED_LANGUAGES.map((lang) => (
-                <option value={lang.identifier} key={lang.identifier}>
+                <option className="md:text-[16px] text-[10px]" value={lang.identifier} key={lang.identifier}>
                   {lang.name}
                 </option>
               ))}

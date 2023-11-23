@@ -80,7 +80,7 @@ const WatchPage = () => {
       {user && (
         <div className="w-screen bg-black bg-opacity-90 h-screen">
           <iframe
-            className=" w-full md:w-[70%] py-4 md:py-2 px-2 md:pl-12 h-[50%] md:h-[80%]"
+            className=" w-full md:w-[70%] py-4 md:py-2 px-2 md:pl-12 h-[42%] md:h-[80%]"
             src={"https://www.youtube.com/embed/" + trailerVideo?.key + "?"}
             title="YouTube video player"
             frameBorder="0"
